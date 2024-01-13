@@ -37,7 +37,7 @@ header {
 
 header h3 {
     color: #131313;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 
@@ -98,14 +98,15 @@ header ul {
 .banner-img {
     width: 100%;
     display: block;
-    margin-top: 3rem;
+    margin-top: 50px;
 }
 
 /* team-section  */
 
-.team-section{
+.team-section {
     margin-top: 85px;
 }
+
 .main-team-section {
     display: flex;
     align-items: center;
@@ -116,6 +117,11 @@ header ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+}
+
+.team-section-img img {
+    width: 100%;
+    display: block;
 }
 
 .team-content-title {
@@ -150,14 +156,86 @@ header ul {
     margin-bottom: 32px;
 }
 
+/* facts-section  */
 
+.facts-section-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.facts-section-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 542px;
+}
+
+.main-facts-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-number {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.facts-card-description {
+    color: #727272;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.facts-card-item {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 45px 35px 60px 35px;
+}
+/* .hide{
+    display: none;
+} */
 
 /* responsive design with media queries  */
 
 @media screen and (max-width: 576px) {
+
+    .main-team-section,
     nav {
         flex-direction: column;
     }
+
+    .team-section-img {
+        grid-template-columns: 1fr;
+    }
+
+    .team-section-content {
+        text-align: center;
+    }
 }
 
-@media screen and (min-width:576px) and (max-width: 992px) {}
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .main-team-section {
+        flex-direction: column;
+    }
+
+    .team-section-img {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-section-content {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .main-team-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
