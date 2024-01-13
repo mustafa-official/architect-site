@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
-    ;
 }
 
 /* shared styles  */
@@ -313,10 +312,33 @@ header ul {
     margin-top: 50px;
 }
 
+/* footer section  */
+footer {
+    margin-top: 80px;
+
+}
+
+footer .container {
+    border-radius: 8px;
+    background: #FFF4E7;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    color: #424242;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
 /* responsive design with media queries  */
 
 @media screen and (max-width: 576px) {
 
+    .features-main-column,
     .sponsors-item,
     .main-facts-card,
     .main-team-section,
@@ -328,6 +350,7 @@ header ul {
         grid-template-columns: 1fr;
     }
 
+    .main-features,
     .facts-section-description,
     .facts-section-title,
     .team-section-content {
@@ -340,15 +363,28 @@ header ul {
     }
 
     .sponsors-item img {
-        width: 50%;
+        /* width: 50%; */
         display: block;
         margin: 0 auto;
+    }
+
+    .badge {
+        max-width: 210px;
+        position: unset;
+        margin: 20px auto;
+    }
+
+    .footer-item {
+        text-align: center;
+        padding: 10px 5px;
+
     }
 
 }
 
 @media screen and (min-width:576px) and (max-width: 992px) {
 
+    .features-main-column,
     .sponsors-item,
     .main-facts-card,
     .main-team-section {
@@ -359,6 +395,7 @@ header ul {
         grid-template-columns: 1fr 1fr;
     }
 
+    .main-features,
     .facts-section-description,
     .facts-section-title,
     .team-section-content {
@@ -371,13 +408,26 @@ header ul {
     }
 
     .sponsors-item img {
-        width: 50%;
+        /* width: 50%; */
         display: block;
         margin: 0 auto;
+    }
+
+    .badge {
+        max-width: 210px;
+        position: unset;
+        margin: 20px auto;
+    }
+    .footer-item {
+        text-align: center;
+        
+
     }
 }
 
 @media screen and (min-width:992px) and (max-width: 1200px) {
+
+    .features-main-column,
     .main-team-section {
         flex-direction: column;
         text-align: center;
